@@ -1,0 +1,15 @@
+/**
+* Payments section
+*/
+
+.payments {
+  &__info {
+    margin: 0 auto;
+  }
+
+  @include min-width(large) {
+    &__info {
+      margin: 0;
+    }
+  }
+}

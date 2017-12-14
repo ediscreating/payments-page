@@ -1,0 +1,51 @@
+/**
+* Navigation Bar
+*/
+
+.nav-bar {
+  padding: 0;
+  margin: 0;
+  background-color: #191c24;
+
+  &__item {
+    list-style-type: none;
+    height: 75px;
+    border-bottom: 1px solid #20232b;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    padding-left: 30px;
+    line-height: 75px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+
+    &--active,
+    &--lighten {
+      color: #808592;
+    }
+
+    &--active {
+      background-color: #2a2d37;
+    }
+  }
+
+  @include min-width(medium) {
+    &__link {
+      &:hover {
+        background-color: #1f2229;
+      }
+
+      &--active:hover {
+        background-color: #2a2d37;
+        cursor: default;
+      }
+    }
+  }
+}

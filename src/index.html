@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="profile-nav">
+        <ul class="nav-bar">
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="#">Личный кабинет</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link nav-bar__link--active" href="#">Платежи</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="#">История платежей</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="#">Настройки</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link nav-bar__link--lighten" href="#">Выйти</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="content">
+        <table class="table payments__info">
+          <caption class="table__caption">Информация по оплате:</caption>
+          <tr class="table__row">
+            <th class="table__header">Номер счета:</th>
+            <td class="table__cell">87123658716587</td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__header">Сумма платежа:</th>
+            <td class="table__cell">100 руб.</td>
+          </tr>
+        </table>
+        <form class="payment-form" method="post">
+          <h1 class="payment-form__heading">Данные банковской карты</h1>
+          <div class="payment-form__content">
+            <div class="payment-form__card-front">
+              <fieldset class="card-num-fieldset payment-form__num-fieldset">
+                <legend class="card-num-fieldset__heading">Номер карты</legend>
+                <input class="card-num-fieldset__input" type="text" name="size">
+                <input class="card-num-fieldset__input" type="text" name="size">
+                <input class="card-num-fieldset__input" type="text" name="size">
+                <input class="card-num-fieldset__input" type="text" name="size">
+              </fieldset>
+              <fieldset class="card-expire-fieldset payment-form__expire-fieldset">
+                <legend class="card-expire-fieldset__heading">Срок действия</legend>
+                <div class="card-expire-fieldset__day-wrapper js-dropdown">
+                  <select class="card-expire-fieldset__day-select" size="1">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="card-expire-fieldset__year-wrapper js-dropdown">
+                  <select class="card-expire-fieldset__year-select" size="1">
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                  </select>
+                </div>
+              </fieldset>
+              <input class="card-holder-input" type="text" name="size" placeholder="Держатель карты">
+            </div>
+            <div class="payment-form__card-back">
+              <div class="payment-form__card-back-stripe"></div>
+              <div class="card-security-code payment-form__security-code">
+                <label class="card-security-code__label" for="code">Код CVV2 / CVC2</label>
+                <div class="card-security-code__input-wrapper">
+                  <input class="card-security-code__input" id="code" type="text" name="code">
+                  <span class="card-security-code__hint-icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input class="payment-form__submit-btn" type="submit" name="submit-btn" value="Отправить">
+        </form>
+      </main>
+      <footer class="footer">
+        Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+        Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+        Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+        Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+      </footer>
+    </div>
+    <script src="bundle.js" charset="utf-8"></script>
+  </body>
+</html>

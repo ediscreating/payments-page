@@ -1,0 +1,28 @@
+/**
+* Table
+*/
+
+.table {
+  border-spacing: 0px;
+
+  &__caption {
+    color: #8494ab;
+    text-align: left;
+    margin-bottom: 13px;
+  }
+
+  &__row {
+    height: 35px;
+  }
+
+  &__header {
+    min-width: 135px;
+    color: #8494ab;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  &__cell {
+    padding: 0 25px;
+  }
+}

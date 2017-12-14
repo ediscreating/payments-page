@@ -1,0 +1,35 @@
+/**
+* Credit Card Number Fieldset
+*/
+
+.card-num-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &__heading {
+    color: #8494ab;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 56px;
+    height: 36px;
+    margin-right: 9px * 0.85;
+    border: 1px solid #e4e9ee;
+    text-align: center;
+    color: #373c43;
+
+    &--invalid {
+      border-color: #e87070;
+    }
+  }
+
+  @include min-width(medium) {
+    &__input {
+      margin-right: 9px;
+      width: 65px;
+      height: 42px;
+    }
+  }
+}

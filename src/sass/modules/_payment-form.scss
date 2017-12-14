@@ -1,0 +1,154 @@
+/**
+* Payment Form
+*/
+
+.payment-form {
+  &__heading {
+    text-align: center;
+  }
+
+  &__content {
+    height: 402px;
+  }
+
+  &__card-front {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 300px;
+    height: 201px;
+    padding: 15px 14px 0;
+    border: 1px solid #e4e9ee;
+    background-color: #f7f8f8;
+    border-radius: 9px;
+  }
+
+  &__card-back {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 300px;
+    height: 201px;
+    margin-top: 5px;
+    background-color: #f7f8f8;
+    border: 1px solid #e4e9ee;
+    border-radius: 9px;
+
+    &-stripe {
+      width: 100%;
+      height: 36px;
+      margin-top: 21px;
+      background-color: #e4e9ee;
+    }
+  }
+
+  &__num-fieldset,
+  &__expire-fieldset {
+    margin-bottom: 8px;
+  }
+
+  &__security-code {
+    float: right;
+    margin: 13px 13px 0 0;
+  }
+
+  &__submit-btn {
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    margin: 40px auto 0;
+    background-color: #0059bd;
+    background: linear-gradient(0deg, rgba(37, 36, 35, 0.18), rgba(190, 190, 190, 0.18)),
+                linear-gradient(0deg, #0059bd, #0059bd);
+    border: none;
+    border-radius: 20px;
+    color: white;
+  }
+
+  @include min-width(small) {
+    /*** Small screen styles ***/
+
+    &__content {
+      position: relative;
+      width: 375px;
+      margin: 0 auto;
+    }
+
+    &__card-front {
+      position: relative;
+      z-index: 2;
+      margin: 0;
+    }
+
+    &__card-back {
+      position: absolute;
+      top: 180px;
+      left: 75px;
+      z-index: 1;
+    }
+  }
+
+  @include min-width(medium) {
+    /*** Medium screen styles ***/
+
+    &__content {
+      margin: 0 auto;
+      height: 255px;
+      width: 495px;
+    }
+
+    &__card-front {
+      left: 0;
+      width: 350px;
+      height: 235px;
+      padding-top: 22px;
+    }
+
+    &__card-back {
+      width: 375px;
+      height: 235px;
+      top: 20px;
+      left: 195px;
+
+      &-stripe {
+        height: 42px;
+        margin-top: 25px;
+      }
+    }
+
+    &__num-fieldset {
+      margin-bottom: 12px;
+    }
+
+    &__expire-fieldset {
+      margin-bottom: 12px;
+    }
+
+    &__security-code {
+      margin: 15px 15px 0 0;
+    }
+  }
+
+  @include min-width(large) {
+    /*** Large screen styles ***/
+
+    &__heading {
+      text-align: left;
+    }
+
+    &__content {
+      margin: 0;
+      width: 100%;
+    }
+
+    &__submit-btn {
+      margin-left: 0;
+      margin-right: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
